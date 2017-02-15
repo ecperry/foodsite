@@ -8,7 +8,7 @@
     <Video :options="videoOptions"></Video>
   </div>
   <Description></Description>
-  <Stories></Stories>
+  <Stories v-for="story in stories" :story="stories"></Stories>
   <Plates></Plates>
   <Credits></Credits>
 </template>
@@ -18,6 +18,7 @@ import Menu from './components/Menu'
 import Top from './components/Top'
 import myVideo from '../node_modules/vue-video'
 import Description from './components/Description'
+import axios from 'axios'
 import Stories from './components/Stories'
 import Plates from './components/Plates'
 import Credits from './components/Credits'
@@ -38,11 +39,16 @@ export default {
           volume: 0.6,
           poster: ''
         }
-      }
+      },
+      stories: []
     }
   },
   mounted () {
-
+    axios.get('/static/content.json')
+    .then((response) => {
+      console.log(response.data)
+      this.stories = response.data
+    })
   },
   beforeDestroy () {
 
