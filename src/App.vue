@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Form Component goes here -->
-    <Header></Header>
+    <Top></Top>
     <div class = "container">
         <my-video :sources="video.sources" :options="video.options"></my-video>
     <Video :options="videoOptions"></Video>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Header from './components/Header'
+import Top from './components/Top'
 import myVideo from '../node_modules/vue-video'
 import Description from './components/Description'
 import Stories from './components/Stories'
@@ -42,7 +42,7 @@ export default {
 
   },
   components: {
-    Header,
+    Top,
     myVideo,
     Description,
     Stories

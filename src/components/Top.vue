@@ -1,5 +1,5 @@
 <template>
-  <div class="Header">
+  <div class="Top">
     <img class = "title" src = ../assets/food.png>
     <p> narratives </p>
   </div>
@@ -12,10 +12,10 @@ export default {
 </script>
 
 <style>
-.Header {
+.Top {
   text-align: center;
   padding-bottom: 150px;
-  font-size: 24pt; 
+  font-size: 24pt;
 
 }
 .title {

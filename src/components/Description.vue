@@ -1,5 +1,5 @@
 <template>
-  <div class="Video">
+  <div class="Description">
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
   sed do eiusmod tempor incididunt ut labore et dolore
@@ -16,10 +16,11 @@ export default {
 </script>
 
 <style>
-.Video {
+.Description {
 padding-right: 50px;
 padding-left: 50px;
-padding-bottom: 40px;
+padding-top: -100px;
+padding-bottom: 100px;
 }
 
 </style>
