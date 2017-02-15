@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <!-- Form Component goes here -->
+    <Header></Header>
+    <Video></Video>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Header from './components/Header'
+import Video from './components/Video'
 
 export default {
   name: 'app',
+  data () {
+  },
+  mounted () {
+
+  },
+  beforeDestroy () {
+
+  },
   components: {
-    Hello
+    Header,
+    Video
+  },
+  methods: {
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+html {
+font-style: normal;
+font-family: sans-serif;
+font-size: 24pt;
+
 }
 </style>
+Contact GitHub API Training Shop Blog About
