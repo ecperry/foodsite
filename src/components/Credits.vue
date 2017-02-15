@@ -17,12 +17,15 @@ export default {
 <style>
 .Credits {
   text-align: center;
-  padding-bottom: 150px;
+  padding-top: 25px;
+  padding-bottom: 50px;
   font-size: 24pt;
+  color: white;
+  background-color: black;
 
 }
 .description {
-  font-size: 14pt;
+  font-size: 8pt;
 }
 
 
