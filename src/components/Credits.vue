@@ -1,6 +1,6 @@
 <template>
-  <div class="Stories">
-    <p> stories </p>
+  <div class="Credits">
+    <p>credits</p>
     <p class = "description">
       Lorem ipsum dolor sit amet, consectetur.
     </p>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style>
-.Stories {
+.Credits {
   text-align: center;
   padding-bottom: 150px;
   font-size: 24pt;

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <!-- Form Component goes here -->
+    <Menu></Menu>
     <Top></Top>
     <div class = "container">
         <my-video :sources="video.sources" :options="video.options"></my-video>
@@ -8,13 +9,18 @@
   </div>
   <Description></Description>
   <Stories></Stories>
+  <Plates></Plates>
+  <Credits></Credits>
 </template>
 
 <script>
+import Menu from './components/Menu'
 import Top from './components/Top'
 import myVideo from '../node_modules/vue-video'
 import Description from './components/Description'
 import Stories from './components/Stories'
+import Plates from './components/Plates'
+import Credits from './components/Credits'
 
 export default {
   name: 'app',
@@ -42,10 +48,13 @@ export default {
 
   },
   components: {
+    Menu,
     Top,
     myVideo,
     Description,
-    Stories
+    Stories,
+    Plates,
+    Credits
   },
   methods: {
   }

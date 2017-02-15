@@ -24,7 +24,7 @@ width: auto;
 max-width: 500px;
 max-height: 500px;
 align: center;
-padding-top: 200px;
+padding-top: 175px;
 }
 
 </style>
