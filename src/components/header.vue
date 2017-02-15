@@ -14,7 +14,8 @@ export default {
 <style>
 .Header {
   text-align: center;
-  padding: none;
+  padding-bottom: 150px;
+  font-size: 24pt; 
 
 }
 .title {

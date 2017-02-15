@@ -1,8 +1,12 @@
 <template>
   <div class="Video">
-    <video width="320" height="240" controls>
-  <source src="FoodStories.mp4" type="video/mp4">
-</video>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore
+  magna aliqua. Ut enim ad minim veniam, quis nostrud
+  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+</p>
 </template>
 
 <script>
@@ -12,18 +16,11 @@ export default {
 </script>
 
 <style>
-.Header {
-  text-align: center;
-  padding: none;
+.Video {
+padding-right: 50px;
+padding-left: 50px;
+padding-top: 25px;
 
-}
-.title {
-height: auto;
-width: auto;
-max-width: 500px;
-max-height: 500px;
-align: center;
-padding-top: 200px;
 }
 
 </style>
