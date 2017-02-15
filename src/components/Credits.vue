@@ -1,7 +1,7 @@
 <template>
   <div class="Credits">
     <p>credits</p>
-    <p class = "description">
+    <p class = "print">
       Lorem ipsum dolor sit amet, consectetur.
     </p>
 
@@ -24,7 +24,7 @@ export default {
   background-color: black;
 
 }
-.description {
+.print {
   font-size: 8pt;
 }
 
