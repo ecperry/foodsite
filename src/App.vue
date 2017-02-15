@@ -6,12 +6,15 @@
         <my-video :sources="video.sources" :options="video.options"></my-video>
     <Video :options="videoOptions"></Video>
   </div>
+  <Description></Description>
+  <Stories></Stories>
 </template>
 
 <script>
 import Header from './components/Header'
 import myVideo from '../node_modules/vue-video'
-import Video from './components/Video'
+import Description from './components/Description'
+import Stories from './components/Stories'
 
 export default {
   name: 'app',
@@ -41,7 +44,8 @@ export default {
   components: {
     Header,
     myVideo,
-    Video
+    Description,
+    Stories
   },
   methods: {
   }

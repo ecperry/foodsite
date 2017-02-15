@@ -19,8 +19,7 @@ export default {
 .Video {
 padding-right: 50px;
 padding-left: 50px;
-padding-top: 25px;
-
+padding-bottom: 40px;
 }
 
 </style>
