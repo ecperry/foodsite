@@ -1,9 +1,9 @@
 
 <template>
-  <div class="Stories">
-    <h2>{{stories.quote}}</h2>
-    <p> {{stories.blurb}}</p>
-    <h3> {{stories.name}} </h3>
+  <div class="Story">
+    <h2>{{story.quote}}</h2>
+    <p> {{story.blurb}}</p>
+    <h3> {{story.name}} </h3>
   </div>
 </template>
 
@@ -12,13 +12,12 @@ export default {
   props: [
     'stories'
   ],
-
-  methods: {
-  }
 }
 </script>
 
 <style scoped>
+.Story{
+}
 .Stories {
   text-align: center;
   padding-bottom: 150px;

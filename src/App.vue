@@ -5,7 +5,7 @@
   <Top></Top>
   <Description></Description>
   <LabelS></LabelS>
-  <Stories v-for="story in stories" :story="story"></Stories>
+  <Story v-for="story in stories" :story="story"></Story>
   <Plates></Plates>
 
   <Credits></Credits>
@@ -16,9 +16,9 @@ import hamburger from './components/Menu'
 import Top from './components/Top'
 import Description from './components/Description'
 import axios from 'axios'
+import Story from './components/Story'
 // import Modal from './components/Modal'
 import LabelS from './components/LabelS'
-import Stories from './components/Stories'
 import Plates from './components/Plates'
 import Credits from './components/Credits'
 // below from used from https://www.npmjs.com/package/vue-video
@@ -27,13 +27,6 @@ import Credits from './components/Credits'
 
 export default {
   name: 'app',
-  data () {
-    return {
-      stories: [],
-      currentTab: 1
-
-    }
-  },
   components: {
     hamburger,
     Top,
@@ -44,11 +37,17 @@ export default {
     Credits,
     LabelS
   },
+  data () {
+    return {
+      stories: [],
+    }
+  },
+
   mounted () {
     axios.get('/static/content.json')
    .then((response) => {
      console.log(response.data)
-     this.story = response.data.story
+     this.stories = response.data
    })
   }
 }
