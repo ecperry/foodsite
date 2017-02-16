@@ -3,6 +3,7 @@
     <!-- Form Component goes here -->
     <hamburger></hamburger>
   <Top></Top>
+  <video-player :options="videoOptions" @player-state-changed="playerStateChanged"></video-player>
   <Description></Description>
   <LabelS></LabelS>
   <Stories v-for="story in stories" :story="story"></Stories>
@@ -15,6 +16,7 @@ import hamburger from './components/Menu'
 import Top from './components/Top'
 // below from used from https://www.npmjs.com/package/vue-video
 // import myVideo from '../node_modules/vue-video'
+import {videoPlayer} from 'vue-video-player'
 import Description from './components/Description'
 import axios from 'axios'
 import LabelS from './components/LabelS'
@@ -42,6 +44,16 @@ export default {
 // <div class = "container">
 // <my-video :sources="video.sources" :options="video.options"></my-video>
 // <Video :options="videoOptions"></Video>
+      videoOptions: {
+        source: {
+          type: 'video/youtube',
+          src: 'https://www.youtube.com/watch?v=2V6tHv5MvFo&t=1s'
+        },
+        techOrder: ['youtube'],
+        autoplay: false,
+        controls: false,
+        ytControls: true
+      },
       stories: [
 
       ]
@@ -50,6 +62,7 @@ export default {
   components: {
     hamburger,
     Top,
+    videoPlayer,
 //    myVideo,
     Description,
     Stories,
@@ -58,18 +71,20 @@ export default {
     LabelS
   },
   methods: {
-  },
-  mounted () {
-    axios.get('/static/content.json')
+    playerStateChanged (playerCurrentState) {
+      console.log(playerCurrentState)
+    },
+    mounted () {
+      axios.get('/static/content.json')
     .then((response) => {
       console.log(response.data)
       this.story = response.data.story
     })
-  },
-  beforeDestroy () {
+    }
+//  beforeDestroy () {
   }
-
 }
+
 </script>
 
 <style>
