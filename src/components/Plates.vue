@@ -31,12 +31,16 @@
 
 <script>
 export default {
+  data () {
+    return {
+      currentTab: 1
+    }
+  },
   computed: {
     computedLeftPosition () {
       return ((this.currentTab - 1) * -600) + 'px'
     }
   }
-
 }
 // methods: {  }
 </script>
