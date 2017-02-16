@@ -4,58 +4,39 @@
     <p class = "description">
       Lorem ipsum dolor sit amet, consectetur.
     </p>
-    <script type="text/x-template" id="img-slider-template">
-  <div id="slider">
-    <input checked="" type="radio" name="slider" id="slide1" selected="false">
-    <input type="radio" name="slider" id="slide2" selected="false">
-    <input type="radio" name="slider" id="slide3" selected="false">
-    <input type="radio" name="slider" id="slide4" selected="false">
-    <div id="slides">
-      <div id="overflow">
-        <div class="inner">
-          <article>
-            <content select="img:nth-of-type(1)"></content>
-          </article>
-          <article>
-            <content select="img:nth-of-type(2)"></content>
-          </article>
-          <article>
-            <content select="img:nth-of-type(3)"></content>
-          </article>
-          <article>
-            <content select="img:nth-of-type(4)"></content>
-          </article>
-        </div> <!-- .inner -->
-      </div> <!-- #overflow -->
+    <div id="app">
+  <div class="tabs-container">
+    <div class="tabs-holder" :style="{ left: computedLeftPosition }">
+      <div class="tab" style="background: green">
+        <img src = "../assets/merritts.png">
+      </div>
+      <div class="tab" style="background: red;">
+        <img src = "../assets/lindas.jpg">
+      </div>
+      <div class="tab" style="background: blue;">
+        <img src = "../assets/als.jpg">
+      </div>
     </div>
-    <label for="slide1"></label>
-    <label for="slide2"></label>
-    <label for="slide3"></label>
-    <label for="slide4"></label>
   </div>
-</script>
 
-<!-- demo root element -->
-<div id="demo">
-  <img-slider>
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg">
-  </img-slider>
+  <ul>
+    <li @click="currentTab = 1">Tab 1</li>
+    <li @click="currentTab = 2">Tab 2</li>
+    <li @click="currentTab = 3">Tab 3</li>
+  </ul>
 </div>
-
-<p>
-  Vue.js implements WebComponent-compliant &lt;content&gt; insertion point mechanism.
-</p>
-<p>
-  Markup and CSS borrowed from <a href="http://css-tricks.com/modular-future-web-components/" target="_blank">CSS Tricks</a>, which is in turn adapted from <a href="http://csscience.com/responsiveslidercss3/" target="_blank">CSScience</a>. Images courtesy of <a href="http://www.flickr.com/photos/eliya" target="_blank">Eliya Selhub</a>
-</p>
   </div>
+
 </template>
 
 <script>
 export default {
+  computed: {
+    computedLeftPosition () {
+      return ((this.currentTab - 1) * -600) + 'px'
+    }
+  }
+
 }
 // methods: {  }
 </script>
@@ -76,89 +57,34 @@ body scoped {
   color: #393939;
   text-align: center;
 }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-#slider {
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-#overflow {
-  width: 100%;
+.tabs-container {
+  position: relative;
+  height: 400px;
+  width: 600px;
   overflow: hidden;
+  border: 1px solid #ccc;
 }
 
-#slides .inner {
-  width: 400%;
+.tabs-holder {
+  position: absolute;
+  width: 1800px;
+  top: 0;
+  left: 0;
+  transition: left 0.75s;
 }
 
-#slides .inner {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-
-  -webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-
-  -webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-#slides article {
-  width: 25%;
+.tab {
+  width: 600px;
+  height: 400px;
   float: left;
 }
 
-#slide1:checked ~ #slides .inner {
-  margin-left: 0;
-}
-
-#slide2:checked ~ #slides .inner {
-  margin-left: -100%;
-}
-
-#slide3:checked ~ #slides .inner {
-  margin-left: -200%;
-}
-
-#slide4:checked ~ #slides .inner {
-  margin-left: -300%;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-label {
-  background: #CCC;
-  display: inline-block;
+li {
   cursor: pointer;
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
+  font-size: 14pt;
 }
 
-#slide1:checked ~ label[for="slide1"],
-#slide2:checked ~ label[for="slide2"],
-#slide3:checked ~ label[for="slide3"],
-#slide4:checked ~ label[for="slide4"] {
-  background: #333;
+li:hover {
+  color: #777;
 }
-
-
 </style>
