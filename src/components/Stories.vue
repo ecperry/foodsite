@@ -11,9 +11,11 @@
 export default {
   props: [
     'stories'
-  ]
+  ],
+
+  methods: {
+  }
 }
-// methods: {  }
 </script>
 
 <style scoped>
