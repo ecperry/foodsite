@@ -1,6 +1,6 @@
 <template>
-  <div class="Menu">
-    <img class = "menu" src = ../assets/menu.png>
+  <div class="hamburger">
+    <img class = "hamburger" src = ../assets/menu.png>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-.Menu{
+.hamburger{
 float: right;
 padding-right: 25px;
 padding-top: 25px;

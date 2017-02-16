@@ -1,5 +1,4 @@
-{
-  "stories":[{
+[{
   "name": "Alex Clayton",
   "quote": "“... we will often eat ‘twists’ of British classics ...”",
   "blurb":"Growing up in a family that takes food and mealtimes very seriously has heavily influenced my relationship with food. My parents are both British, but lived in the Caribbean and South America before Kenya, where I spent the first eight years of my life. Those influences carried through to my more recent life in Scotland, where we will often eat ‘twists’ of the British classics that they craved when they were abroad. In addition to those, the wide array of cuisines available in Edinburgh means it is never uncommon to mix dishes from around the world. I still eat a complex mix of different cuisines and tastes at UNC and love the variety that brings, even at the cost of a particular food identity. One of the things I have not held on to so well, however, is the value that my parents place on mealtimes as the main point of contact for the day. I think this is change is inherent in being a busy college student.",
@@ -7,24 +6,13 @@
 },
 {
   "name": "Camila Molina",
-  "quote": "“Rice is always present in a Colombian lunch (even with pasta!).”",
+  "quote": "Rice is always present in a Colombian lunch (even with pasta!).",
   "blurb": "I wish my meals weren’t so rushed. Food, right now, is inconvenient. It’s an extra thing I have to think about during the day. Although I would love to spend a few hours a week searching for food recipes and food bloggers on the Internet, I can’t do that. So, I turn to what I know how to prepare. Honey granola is an easy snack I can pop into my mouth in transition from class and beans remind me of my mom’s Colombian cooking. I eat rice every day. Rice is always present in a Colombian lunch (even with pasta!). It’s like the coffee table that holds everything together in the living room—if it’s missing, the room is incomplete.",
   "image": "Camila.jpg"
 },
 {
   "name": "Emily Perry",
-  "quote": " “I have a somewhat transactional view of food — I put in my body all nutrients I need to do what I need to do.” ",
+  "quote": "I have a somewhat transactional view of food — I put in my body all nutrients I need to do what I need to do.",
   "blurb": "It’s midnight, and I’m closing my computer to take a break from homework. I head downstairs, tiptoeing carefully so I don’t wake up my family. I carefully slip over to the kitchen, feeling my way by the chair moulding on the side of the wall. I creak open the refrigerator. It engulfs me  in a pool of light. I grab for the peanut butter, the bags of veggies, and the cheese. I carefully fill little ziploc bags full of food for lunch, snacks, and dinner tomorrow. I know I’ll need quick energy to make it through the day. This was my life in high school. Because I commuted to Charlotte, an hour from my house in Hickory, NC, to train in classical ballet, I prepared each of my meals ahead of time. My days were spent in route to ballet practice, doing my homework in the back seat, cramming in the necessary calories to sustain my body for a long night of dancing.  I’ve realized that this period of intense athletic training still influences my food habits today, even though I’ve long since hung up my pointe shoes. My life looks different now, but I still  gravitate toward quick and easy foods — lots of fruits, lots of veggies. I have a somewhat transactional view of food — I put in my body all nutrients I need to do what I need to do.",
   "image": "Emily.jpg"
-}
-]},
-
-{"plates":[{
-  "title": "Merritt's BLT",
-  "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-},
-{
-  "title": "Linda's Cheese Fries",
-  "blurb": ""
-}
-]}
+}]
