@@ -4,13 +4,17 @@
      Note: the click states and data below came from help from Seth Wright in class
      Here, I'm using a boolean to toggle the state of the panel from invisible to visible
      on click.
-   -->
+    -->
     <img class="button" @click="isVisible = !isVisible" src = ../../static/menu.png>
     <div class="panel" v-if="isVisible == true">
       <p class="video"><a href="#video">video</a></p>
       <p class="stories"><a href="#story">stories</a></p>
       <p class="plates"><a href="#plates">plates</a></p>
       <p class="credits"><a href="#credits">credits</a></p>
+
+      <!--
+      Anchor tag refresher from https://blog.hubspot.com/marketing/jump-link-same-page#sm.00006jfrg8p2idk6wq41exigy3tsj
+      -->
       </ul>
     </div>
   </div>
