@@ -1,4 +1,5 @@
 <template>
+<a id="credits">
   <div class="Credits">
     <p>credits</p>
     <p class = "print">
@@ -9,6 +10,7 @@
       Plates: Photos by, content by Emily Perry
     </p>
   </div>
+</a>  
 </template>
 
 <script>

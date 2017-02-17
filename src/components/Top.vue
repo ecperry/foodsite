@@ -8,14 +8,11 @@
 <script>
 export default {
 }
-// methods: {  }
 </script>
 
 <style>
-.Top {
-  text-align: center;
-  padding-bottom: 20%;
-  font-size: 24pt;
+.start {
+font-size: 35pt;
 }
 
 .title {
@@ -27,8 +24,10 @@ padding-top: 20%;
 padding-left: 8%;
 padding-bottom: 0;
 }
-.start {
-font-size: 35pt;
-}
 
+.Top {
+  text-align: center;
+  padding-bottom: 20%;
+  font-size: 24pt;
+}
 </style>

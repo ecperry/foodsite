@@ -1,4 +1,5 @@
 <template>
+<a id="plates">
   <div class="Plates">
     <h1 class= "Title"> plates</h1>
     <p class = "description">
@@ -6,6 +7,13 @@
       Chapel Hill favorite.
     </p>
     <div class="blob">
+    <!--
+    Note: the tab code below was modified from an example Seth Wright shared with
+    our class.
+    Here, I'm adding the click even listener to each list item in order to change the
+    photo displayed in the gallery. I modified the original example from solid colors to
+    formatted photos
+    -->
     <ul>
       <p class = "center" @click="currentTab = 1" >Merritt's BLT Sandwich</p>
       <p class = "center" @click="currentTab = 2">Linda's Cheese Fries</p>
@@ -34,7 +42,7 @@
 </p>
 </div>
 </div>
-
+</a>
 </template>
 
 <script>
@@ -56,7 +64,6 @@ export default {
 </script>
 
 <style>
-
 body scoped {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 12px;
@@ -124,13 +131,6 @@ padding: 1%;
   width: 100%;
 }
 
-.Title{
-text-align: center;
-padding-bottom: 5px;
-padding-top: 10%;
-font-size: 30pt;
-}
-
 .tabs-container {
   position: relative;
   height: 400px;
@@ -152,4 +152,10 @@ font-size: 30pt;
   height: 400px;
 }
 
+.Title{
+text-align: center;
+padding-bottom: 5px;
+padding-top: 10%;
+font-size: 30pt;
+}
 </style>

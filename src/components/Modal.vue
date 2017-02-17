@@ -1,6 +1,11 @@
 
 <template>
 <div class="Modal">
+<!--
+Note: This is no longer being used as part of app.vue - this my idea for a modal before I
+chose to use a collapsible list instead
+-->
+
 <div class="modal is-active">
   <div class="modal-background"></div>
   <div class="modal-content">
@@ -24,7 +29,6 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 </style>
 Contact GitHub API Training Shop Blog About

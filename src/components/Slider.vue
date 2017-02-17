@@ -1,4 +1,8 @@
 <template>
+  <!--
+  Note: This component is no longer a part of the app. This was one attempt to create a text/photo
+  slider that I eventually discarded and replaced with "Plates"
+-->
   <div class="component component-a">
     Component A
     <h3>{{this.tab.title}}</h3>
@@ -10,7 +14,7 @@
 
 <script>
 export default {
-props: ['tab'], 
+props: ['tab'],
 
 data: {
     activeTab: null,
@@ -21,7 +25,6 @@ data: {
         componentName: 'firstComponent',
       },
 }
-// methods: {  }
 </script>
 
 <style>
