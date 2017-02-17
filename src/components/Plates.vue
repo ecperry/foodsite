@@ -1,11 +1,10 @@
 <template>
   <div class="Plates">
-    <p class= "Title"> plates</p>
+    <h1 class= "Title"> plates</h1>
     <p class = "description">
-      Click a restaurant in the list below to get a glimpse of a bacon-filled
+      Click a restaurant in the list below to see a bacon-filled
       Chapel Hill favorite.
-      </p>
-  </p>
+    </p>
     <div class="blob">
     <ul>
       <p class = "center" @click="currentTab = 1" >Merritt's BLT Sandwich</p>
@@ -84,16 +83,26 @@ li:hover {
   overflow: hidden;
   cursor: pointer;
   padding-left:25%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .block{
   text-align: center;
-
+  background-color: darkgray;
+  color: white;
+  padding: 5%;
 }
 
 .center {
 text-align: center;
+padding: 1%;
+}
+
+.center:hover {
+  color: white;
+  background-color: #7FBE19;
+  padding: 1%;
+
 }
 
 .description {
@@ -107,6 +116,7 @@ text-align: center;
 .Plates {
   text-align: center;
   align-items: center;
+  padding-bottom: 0px;
 }
 
 .small{

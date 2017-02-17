@@ -75,10 +75,8 @@ div.panel {
 
 .square {
   width: 200px;
+  padding-top: 2%;
 }
-
-
-/* Style the buttons that are used to open and close the accordion panel */
 
 </style>
 Contact GitHub API Training Shop Blog About

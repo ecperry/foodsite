@@ -18,12 +18,13 @@ export default {
 .LabelS {
   text-align: center;
   padding-bottom: 2%;
-  padding-top: 3%;
+  padding-top: 10%;
   font-size: 24pt;
 
 }
 .description {
   font-size: 16pt;
+  font-weight: 400;
 }
 
 

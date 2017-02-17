@@ -12,7 +12,6 @@ a lens of food through stories from the UNC community.
 <script>
 export default {
 }
-// methods: {  }
 // NOTES:
 // https://www.w3schools.com/html/html_youtube.asp --> this is for the iframe idea
 // https://developers.google.com/youtube/player_parameters --> this is where I found YouTube parameter settings-- haven't gotten style changes to work
@@ -55,7 +54,7 @@ padding-bottom: 0;
 font-style: italic;
 }
 .Video {
-  background-color: #DA5AAA;
+  background-color: darkgrey;
 }
 
 </style>

@@ -2,10 +2,10 @@
   <div class="hamburger">
     <img class="button" @click="isVisible = !isVisible" src = ../../static/menu.png>
     <div class="panel" v-if="isVisible == true">
-      <p class="video"><a href="">VIDEO</a></p>
-      <p class="stories"><a href="">STORIES</a></p>
-      <p class="plates"><a href="">PLATES</a></p>
-      <p class="credits"><a href="">CREDITS</a></p>
+      <p class="video"><a href="">video</a></p>
+      <p class="stories"><a href="">stories</a></p>
+      <p class="plates"><a href="">plates</a></p>
+      <p class="credits"><a href="">credits</a></p>
       </ul>
     </div>
   </div>
@@ -18,9 +18,7 @@ export default {
       isVisible: false
     }
   }
-
 }
-// methods: {  }
 </script>
 
 <style>
@@ -32,7 +30,6 @@ text-decoration: none;
 div.panel scoped{
     padding: 0 18px;
     background-color: gray;
-  /*  display: none; */
 }
 
 .button scoped{
@@ -41,7 +38,14 @@ div.panel scoped{
 }
 
 .credits {
-  background-color: #353635;
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.credits:hover {
+  background-color: black;
   color: white;
   text-align: center;
   cursor: pointer;
@@ -55,6 +59,13 @@ padding-top: 2%;
 }
 
 .plates {
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.plates:hover {
   background-color: #7FBE19;
   color: white;
   text-align: center;
@@ -62,13 +73,28 @@ padding-top: 2%;
 }
 
 .stories {
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stories:hover {
   background-color: #98CEF0;
   color: white;
   text-align: center;
   cursor: pointer;
 }
+
 .video {
-  background-color: #DA5AAA;
+  background-color: white;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.video:hover {
+  background-color: darkgrey;
   color: white;
   text-align: center;
   cursor: pointer;

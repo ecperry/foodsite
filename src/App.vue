@@ -1,8 +1,7 @@
 <template>
 
   <div id="app">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
-    <!-- Form Component goes here -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
   <hamburger></hamburger>
   <Top></Top>
   <Description></Description>
@@ -23,7 +22,7 @@ import Plates from './components/Plates'
 import Credits from './components/Credits'
 // attempted to make stories modals instead of a collapsible list
 // import Modal from './components/Modal'
-// below from used from https://www.npmjs.com/package/vue-video
+// comments below were for video attempt, used from https://www.npmjs.com/package/vue-video
 // import myVideo from '../node_modules/vue-video'
 // import {videoPlayer} from 'vue-video-player'
 
@@ -37,14 +36,12 @@ export default {
     Plates,
     Credits,
     LabelS
-    // Modal,
   },
   data () {
     return {
       stories: []
     }
   },
-
   mounted () {
     axios.get('/static/content.json')
    .then((response) => {
@@ -130,8 +127,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
 body {
 margin: 0px;
 }
@@ -157,6 +152,9 @@ li:hover {
   color: #777;
 }
 
+div {
+padding-bottom: 0px;
+}
 .tab {
   width: 600px;
   height: 400px;
