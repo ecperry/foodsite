@@ -38,7 +38,8 @@
   back to early settlers, pork was relied upon as a valuable source of protein.
   Bacon grease was a prominent cooking ingredient in the
   slave-operated plantation kitchens that characterized Southern food throughout
-  the Civil War.
+  the Civil War. Now, many years later, bacon continues to be a fixture of the homestyle
+  cooking featured in many Chapel Hill restaurants. 
 </p>
 </div>
 </div>
