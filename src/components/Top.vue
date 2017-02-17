@@ -1,7 +1,7 @@
 <template>
   <div class="Top">
     <img class = "title" src = "../../static/food.png">
-    <p> narratives </p>
+    <h1> narratives </h1>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 <style>
 .Top {
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 20%;
   font-size: 24pt;
 
 }
@@ -22,9 +22,8 @@ export default {
 height: auto;
 width: auto;
 max-width: 350px;
-max-height: 350px;
 align: center;
-padding-top: 175px;
+padding-top: 20%;
 padding-left: 8%;
 
 }

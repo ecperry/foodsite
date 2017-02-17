@@ -2,10 +2,10 @@
   <div class="hamburger">
     <img class="button" @click="isVisible = !isVisible" src = ../../static/menu.png>
     <div class="panel" v-if="isVisible == true">
-      <p class="menu"><a href="">VIDEO</a></p>
-      <p class="menu"><a href="">STORIES</a></p>
-      <p class="menu"><a href="">PLATES</a></p>
-      <p class="menu"><a href="">CREDITS</a></p>
+      <p class="video"><a href="">VIDEO</a></p>
+      <p class="stories"><a href="">STORIES</a></p>
+      <p class="plates"><a href="">PLATES</a></p>
+      <p class="credits"><a href="">CREDITS</a></p>
       </ul>
     </div>
   </div>
@@ -28,16 +28,11 @@ a {
 color: inherit;
 text-decoration: none;
 }
-.hamburger{
-float: right;
-background-color: white;
-padding-right: 2%;
-padding-top: 2%;
-}
 
-.menu{
-  text-align: right;
-  cursor: pointer;
+div.panel scoped{
+    padding: 0 18px;
+    background-color: gray;
+  /*  display: none; */
 }
 
 .button scoped{
@@ -45,9 +40,39 @@ padding-top: 2%;
   cursor: pointer;
 }
 
-div.panel scoped{
-    padding: 0 18px;
-    background-color: gray;
-  /*  display: none; */
+.credits {
+  background-color: #353635;
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
+
+.hamburger{
+float: right;
+background-color: white;
+padding-right: 2%;
+padding-top: 2%;
+}
+
+.plates {
+  background-color: #7FBE19;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.stories {
+  background-color: #98CEF0;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.video {
+  background-color: #DA5AAA;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+
 </style>

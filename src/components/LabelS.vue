@@ -1,8 +1,8 @@
 <template>
   <div class="LabelS">
-    <p>stories</p>
+    <h1>stories</h1>
     <p class = "description">
-      Lorem ipsum dolor sit amet, consectetur.
+      Click a quote to read a student story on the intersection of food and life.
     </p>
 
   </div>
@@ -17,12 +17,13 @@ export default {
 <style>
 .LabelS {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 2%;
+  padding-top: 3%;
   font-size: 24pt;
 
 }
 .description {
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
 

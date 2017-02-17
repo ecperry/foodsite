@@ -1,13 +1,14 @@
 <template>
+
   <div id="app">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
     <!-- Form Component goes here -->
-<hamburger></hamburger>
+  <hamburger></hamburger>
   <Top></Top>
   <Description></Description>
   <LabelS></LabelS>
   <Story v-for="story in stories" :story="story"></Story>
   <Plates></Plates>
-
   <Credits></Credits>
 </template>
 
@@ -17,10 +18,11 @@ import Top from './components/Top'
 import Description from './components/Description'
 import axios from 'axios'
 import Story from './components/Story'
-// import Modal from './components/Modal'
 import LabelS from './components/LabelS'
 import Plates from './components/Plates'
 import Credits from './components/Credits'
+// attempted to make stories modals instead of a collapsible list
+// import Modal from './components/Modal'
 // below from used from https://www.npmjs.com/package/vue-video
 // import myVideo from '../node_modules/vue-video'
 // import {videoPlayer} from 'vue-video-player'
@@ -32,10 +34,10 @@ export default {
     Top,
     Description,
     Story,
-    // Modal,
     Plates,
     Credits,
     LabelS
+    // Modal,
   },
   data () {
     return {
@@ -52,13 +54,7 @@ export default {
   }
 }
 
-// beforeDestroy () {
-// }
-// methods: {
-// playerStateChanged (playerCurrentState) {
-// console.log(playerCurrentState)
-// },
-// all of the below are various video player attempts
+// all of the comments in the section below are various failed video player attempts
 // video: {
 // sources: [{
 // src: 'assets/FoodStories.mp4',
@@ -69,6 +65,12 @@ export default {
 // volume: 0.6,
 // poster: ''
 // }
+// },
+// beforeDestroy () {
+// }
+// methods: {
+// playerStateChanged (playerCurrentState) {
+// console.log(playerCurrentState)
 // },
 // would need this in HTML above:
 // <div class = "container">
@@ -126,15 +128,39 @@ export default {
 // <video-player :options="videoOptions" @player-state-changed="playerStateChanged"></video-player>
 //   },
 </script>
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-html {
-font-style: normal;
-font-family: sans-serif;
-font-size: 12pt;
-}
+
 body {
 margin: 0px;
+}
+
+html {
+font-style: normal;
+font-family: 'PT Sans', sans-serif;
+font-size: 14pt;
+color: black;
+}
+
+h1 {
+  font-style: normal;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 28pt;
+  color: black;
+}
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  color: #777;
+}
+
+.tab {
+  width: 600px;
+  height: 400px;
+  float: left;
 }
 
 .tabs-container {
@@ -151,20 +177,6 @@ margin: 0px;
   top: 0;
   left: 0;
   transition: left 0.75s;
-}
-
-.tab {
-  width: 600px;
-  height: 400px;
-  float: left;
-}
-
-li {
-  cursor: pointer;
-}
-
-li:hover {
-  color: #777;
 }
 </style>
 Contact GitHub API Training Shop Blog About
