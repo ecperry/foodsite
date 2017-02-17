@@ -1,6 +1,6 @@
 <template>
   <div class="Top">
-    <img class = "title" src = ../assets/food.png>
+    <img class = "title" src = "../../static/food.png">
     <p> narratives </p>
   </div>
 </template>
@@ -21,10 +21,12 @@ export default {
 .title {
 height: auto;
 width: auto;
-max-width: 500px;
-max-height: 500px;
+max-width: 350px;
+max-height: 350px;
 align: center;
 padding-top: 175px;
+padding-left: 8%;
+
 }
 
 </style>

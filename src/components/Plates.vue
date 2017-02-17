@@ -1,28 +1,28 @@
 <template>
   <div class="Plates">
-    <p> plates</p>
+    <p class= "Title"> plates</p>
     <p class = "description">
       Lorem ipsum dolor sit amet, consectetur.
     </p>
-    <div id="app">
+    <div class="blob">
   <div class="tabs-container">
     <div class="tabs-holder" :style="{ left: computedLeftPosition }">
-      <div class="tab" style="background: green">
-        <img src = "../assets/merritts.png">
+      <div class="tab">
+        <img src = "../../static/merritts.png" class="small">
       </div>
-      <div class="tab" style="background: red;">
-        <img src = "../assets/lindas.jpg">
+      <div class="tab">
+        <img src = "../../static/lindas.jpg"class="small">
       </div>
-      <div class="tab" style="background: blue;">
-        <img src = "../assets/als.jpg">
+      <div class="tab">
+        <img src = "../../static/als.jpg" class="small">
       </div>
     </div>
   </div>
 
   <ul>
-    <li @click="currentTab = 1">Tab 1</li>
-    <li @click="currentTab = 2">Tab 2</li>
-    <li @click="currentTab = 3">Tab 3</li>
+    <p class = "center" @click="currentTab = 1" >Merritt's BLT Sandwich</p>
+    <p class = "center" @click="currentTab = 2">Linda's Cheese Fries</p>
+    <p class = "center" @click="currentTab = 3">Al's Burger Shack</p>
   </ul>
 </div>
   </div>
@@ -31,6 +31,9 @@
 
 <script>
 export default {
+  props: [
+    'plate'
+  ],
   data () {
     return {
       currentTab: 1
@@ -48,12 +51,22 @@ export default {
 <style>
 .Plates {
   text-align: center;
-  padding-bottom: 150px;
-  font-size: 24pt;
+  align-items: center;
+}
 
+.Title{
+text-align: center;
+padding-bottom: 50px;
+font-size: 24pt;
 }
 .description {
+  text-align: center;
+  padding-bottom: 5px;
   font-size: 14pt;
+}
+img scoped{
+max-width: 400px;
+
 }
 body scoped {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -61,12 +74,21 @@ body scoped {
   color: #393939;
   text-align: center;
 }
+.blob {
+  width: 50%;
+  max-width: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-left:25%;
+  
+}
+
 .tabs-container {
   position: relative;
   height: 400px;
   width: 600px;
   overflow: hidden;
-  border: 1px solid #ccc;
+  border: 1px solid #black;
 }
 
 .tabs-holder {
@@ -75,14 +97,22 @@ body scoped {
   top: 0;
   left: 0;
   transition: left 0.75s;
+
 }
 
 .tab {
   width: 600px;
   height: 400px;
-  float: left;
+
+}
+.center {
+text-align: center;
 }
 
+.small{
+  height: 100%;
+  width: 100%;
+}
 li {
   cursor: pointer;
   font-size: 14pt;

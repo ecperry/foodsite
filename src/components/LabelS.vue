@@ -17,7 +17,7 @@ export default {
 <style>
 .LabelS {
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 10px;
   font-size: 24pt;
 
 }

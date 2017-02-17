@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Form Component goes here -->
-    <hamburger></hamburger>
+<hamburger></hamburger>
   <Top></Top>
   <Description></Description>
   <LabelS></LabelS>
@@ -31,7 +31,7 @@ export default {
     hamburger,
     Top,
     Description,
-    Stories,
+    Story,
     // Modal,
     Plates,
     Credits,
@@ -39,7 +39,7 @@ export default {
   },
   data () {
     return {
-      stories: [],
+      stories: []
     }
   },
 
@@ -131,7 +131,7 @@ export default {
 html {
 font-style: normal;
 font-family: sans-serif;
-font-size: 14pt;
+font-size: 12pt;
 }
 body {
 margin: 0px;
